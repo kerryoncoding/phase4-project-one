@@ -8,10 +8,10 @@ class Squad(db.Model):
 
    id = db.Column(db.Integer, primary_key=True)
    name = db.Column(db.String)
-   description = db.Column(db.String)
+   podcast = db.Column(db.String)
 
    def __repr__(self):
-        return f'<Squad {self.id}, {self.name}, {self.description}>'
+        return f'<Squad {self.id}, {self.name},{self.podcast}>'
 
 
 class User(db.Model):
