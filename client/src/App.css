@@ -18,6 +18,74 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+/* here down */
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body{
+  color: #153A4D
+}
+
+nav {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 15px;
+  text-decoration: none;
+  background-color: #E4F1FE;
+  font-size: 20px;
+  color: #153A4D;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+
+nav a:hover {
+  color: white;
+  background: #153A4D;
+}
+
+nav a.active {
+  color: white;
+  background: #153A4D;
+}
+
+/* HOME */
+
+.homeImage {
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 15px;
+  box-shadow: 6px 6px 8px rgba(138, 138, 138, 0.3);
+}
+
+/* ABOUT */
+
+.about-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.skill-list {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+
+/* here up */
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
