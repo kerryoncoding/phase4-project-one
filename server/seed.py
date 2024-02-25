@@ -1,4 +1,8 @@
-from config import app, db, User, Squad
+from config import app, db
+
+from models import User, Squad
+
+# from faker import Faker
 
 if __name__ == "__main__":
   with app.app_context():
@@ -9,6 +13,12 @@ if __name__ == "__main__":
     users.append(User(username = "Brian", email = "brian@gmail.com" ))
     users.append(User(username = "Justin", email = "justin@gmail.com" ))
     users.append(User(username = "Dana", email = "Dana@gmail.com" ))
+
+# Faker Data input  vvv
+    # for n in range(10):
+    #     user = User(name=fake.first_name(), email= fake.email())
+    #     users.append(user)
+    
 
     squads.append(Squad(name = "PodSquad", podcast = "We can do hard things" ))
     squads.append(Squad(name = "Dax Chats", podcast = "Armchair Expert" ))
