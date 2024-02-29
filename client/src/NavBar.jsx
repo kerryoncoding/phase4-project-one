@@ -5,7 +5,7 @@ function NavBar(){
    return (
       <nav>
          <NavLink exact to="/" > HOME </NavLink>
-         <NavLink exact to="/Squads" > YOUR SQUADS </NavLink>
+         <NavLink exact to="/squads" > YOUR SQUADS </NavLink>
          <NavLink exact to="/create" > CREATE SQUAD </NavLink>
       </nav>
    )
