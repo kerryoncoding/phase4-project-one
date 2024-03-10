@@ -3,7 +3,7 @@ from config import app
 from flask_cors import CORS
 from flask import Flask, request, jsonify, make_response
 from flask_migrate import Migrate
-from models import User, Squad, db
+from models import Squad, db
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ db.init_app(app)
 @app.route('/api/squads', methods=['GET', 'POST'])
 def squads():
   if request.method == 'GET':
-    squads = Squad.query.order_by('created_at').all()
+    squads = Squad.query.all()
 
     response = make_response(
         jsonify([squad.to_dict() for squad in squads]),
